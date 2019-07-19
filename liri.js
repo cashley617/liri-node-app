@@ -72,7 +72,9 @@ function doIt() {
         if (err) {
             console.log(err);
         }
-        console.log(data);
+        let array = data.split(",");
+        process.argv[3] = array[1];
+        spotifySearch(process.argv[3]);
     })
 };
 
