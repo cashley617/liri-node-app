@@ -1,9 +1,9 @@
-require("dotenv").config();
+// require("dotenv").config();
 
-var keys = require("./keys.js");
+// var keys = require("./keys.js");
 
 // Spotify Section
-var spotify = new Spotify(keys.spotify);
+// var spotify = new Spotify(keys.spotify);
 
 // search: function ({ 
 //     type: 'artist OR album OR track', 
@@ -12,16 +12,16 @@ var spotify = new Spotify(keys.spotify);
 // }, callback);
 
 
-spotify.search ({ 
-    type: 'Song name', 
-    query: 'My search query',
-    limit: 20
-        }, function (err, data) {
-    if (err) {
-        return console.log('Error occurred: ' + err);
-    }
-    console.log(data);
-});
+// spotify.search ({ 
+//     type: 'Song name', 
+//     query: 'My search query',
+//     limit: 20
+//         }, function (err, data) {
+//     if (err) {
+//         return console.log('Error occurred: ' + err);
+//     }
+//     console.log(data);
+// });
 
 
 
@@ -47,14 +47,14 @@ console.log(movieURL);
 
 axios.get(movieURL).then(
     function(response) {
-        console.log("Movie Title: " + response.data.title);
-        console.log("Release Year: " + response.data.year);
+        console.log("Movie Title: " + response.data.Title);
+        console.log("Release Year: " + response.data.Year);
         console.log("IMDB Rating: " + response.data.imdbRating);
-        console.log("Rotten Tomatoes: " + response.data.ratings[1].value);
-        console.log("Production Country: " + response.data.country);
-        console.log("Language: " + response.data.language);
-        console.log("Plot: " + response.data.plot);
-        console.log("Cast: " + response.data.actors);
+        console.log("Rotten Tomatoes: " + response.data.Ratings[1].Value);
+        console.log("Production Country: " + response.data.Country);
+        console.log("Language: " + response.data.Language);
+        console.log("Plot: " + response.data.Plot);
+        console.log("Cast: " + response.data.Actors);
     })
     .catch(function(error) {
         if (error.response) {
