@@ -43,13 +43,19 @@ Open your Terminal and navigate to the project.
 ![LIRI Surprise](/images/do-what-it-says.png)
 
 
-### The packages: 
+### The recipe: 
 Liri uses:
-* axios 
-* fs 
-* keys 
-* moment 
+* Axios 
+* Node-File-System 
+* Keys 
+* Moment.js 
 * Spotify 
+* Node.js
+* DotEnv
+* OMDB-API
+* Bandsintown-API
+* Spotify-API 
+* JavaScript (Of course!) 
 
 
 
