@@ -81,7 +81,7 @@ function doIt() {
 // OMDB and Axios Section
 function omdbInfo() {
     if (!process.argv[3]) {
-        process.argv[3] = "Mr Nobody";
+        process.argv[3] = "Cars";
     }
 
     axios.get(movieURL).then(
