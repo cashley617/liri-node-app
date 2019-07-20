@@ -21,7 +21,7 @@ Open your Terminal and navigate to the project.
 
 * To search Spotify: Type node liri.js concert-this "artist or band name here"
 
-![GitHub Logo](/images/spotify-this-song-lingerie)
+![LIRI Spotify](/images/spotify-this-song-lingerie.png)
 Format: ![Alt Text](url)
 
 * To search OMDB: Type node liri.js movie-this <"movie name here">
